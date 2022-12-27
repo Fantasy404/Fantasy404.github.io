@@ -1,207 +1,277 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>FantasyのBlog</title><meta name="author" content="范特西"><meta name="copyright" content="范特西"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="我的青春正在饶恕">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FantasyのBlog">
+<meta property="og:url" content="https://www.fantasy404.top/index.html">
+<meta property="og:site_name" content="FantasyのBlog">
+<meta property="og:description" content="我的青春正在饶恕">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.fantasy404.top/img/avatar.jpg">
+<meta property="article:author" content="范特西">
+<meta property="article:tag" content="算法 计算机基础">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.fantasy404.top/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.fantasy404.top/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'FantasyのBlog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-12-27 21:21:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/27/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-12-27T03:09:56.156Z" itemprop="datePublished">2022-12-27</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/27/hello-world/">Hello World</a>
-    </h1>
-  
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://www.fomal.cc/static/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://source.fomal.cc/img/default_cover_1.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">FantasyのBlog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">FantasyのBlog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/fantasy404" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1589513855@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/27/%E5%89%91%E6%8C%87offerweek3/" title="无题"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_8.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/%E5%89%91%E6%8C%87offerweek3/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.793Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-22T13:24:33.710Z" title="更新于 2022-03-22 21:24:33">2022-03-22</time></span></div><div class="content">反转链表题目描述定义一个函数，输入一个链表的头结点，反转该链表并输出反转后链表的头结点。
+思考题：
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+请同时实现迭代版本和递归版本。12345678910111213141516171819202122232425/** * Definition for singly-linked list. * struct ListNode &#123; *     int val; *     ListNode *next; *     ListNode(int x) : val(x), next(NULL) &#123;&#125; * &#125;; */class Solution &#123;public:    ListNode* reverseList(ListNode* head) &#123;        if(!head) return head;                ListNode *a = head, *b = a -&gt; next;                while(b)        &#123;            ListNode *c  ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/27/%E5%89%91%E6%8C%87offerweek2/" title="无题"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_12.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/%E5%89%91%E6%8C%87offerweek2/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.790Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-22T09:53:51.440Z" title="更新于 2022-03-22 17:53:51">2022-03-22</time></span></div><div class="content">机器人的运动范围题目描述地上有一个 m 行和 n 列的方格，横纵坐标范围分别是 0∼m−1 和 0∼n−1。
+一个机器人从坐标 (0,0) 的格子开始移动，每一次只能向左，右，上，下四个方向移动一格。
+但是不能进入行坐标和列坐标的数位之和大于 k 的格子。
+请问该机器人能够达到多少个格子？
+123456789101112131415161718192021222324252627282930313233class Solution &#123;public:    typedef pair&lt;int, int&gt; PII;    bool st[60][60] = &#123;false&#125;;    int dx[4] = &#123;-1, 0, 1, 0&#125;, dy[4] = &#123;0, 1, 0, -1&#125;;        int movingCount(int threshold, int rows, int cols)    &#123;        if (!rows || !cols) return 0;               ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/27/%E5%89%91%E6%8C%87offerweek1/" title="无题"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/%E5%89%91%E6%8C%87offerweek1/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.787Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-22T08:26:10.164Z" title="更新于 2022-03-22 16:26:10">2022-03-22</time></span></div><div class="content">找出数组中重复的数字题目描述给定一个长度为 n 的整数数组 nums，数组中所有的数字都在 0∼n−1的范围内。
+数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。
+请找出数组中任意一个重复的数字。
+注意：如果某些数字不在 0∼n−1 的范围内，或数组中不包含重复数字，则返回 -1；
+unordered_map  时间O(n) 空间O(n)
+用哈希表记录每个元素出现的次数，如果遍历到重复的数字则输出-1即可
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/27/hello-world/" data-id="clc5oz8s00000xww3edjchll4" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+12345678910111213141516171819class Solution &#123;public:    int duplicateInArray(vector&lt;int&gt;&amp; nums) &#123;        int n = nums.size();        unordered_map&lt;int, int&gt; hash;                // 题目要求数组元素不在 (0 ~ n - 1) 的范围内则直接返回 -1         for (auto x : nums)          ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/27/PAT%E4%B9%99%E7%BA%A71040~1059/" title="PAT乙级题解(三) (1040 ~ 1059)"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PAT乙级题解(三) (1040 ~ 1059)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/PAT%E4%B9%99%E7%BA%A71040~1059/" title="PAT乙级题解(三) (1040 ~ 1059)">PAT乙级题解(三) (1040 ~ 1059)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.782Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-27T04:06:07.668Z" title="更新于 2022-03-27 12:06:07">2022-03-27</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/PAT%E4%B9%99%E7%BA%A7/">PAT乙级</a></span></div><div class="content">1040 有几个PAT
+要想知道构成多少个PAT，那么遍历字符串后对于每⼀A，它前⾯的P的个数和它后⾯的T的个数
+  的乘积就是能构成的PAT的个数
 
 
+1234567891011121314151617181920212223242526272829303132#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;using namespace std;const int INF = 1000000007;int main()&#123;    string s;    while(cin &gt;&gt; s)    &#123;        int len = s.size(), res = 0, countp = 0, countt = 0;        for(int i = 0 ; i &lt; len ; i ++ )        &#123;            if(s[i] == &#x27;T&#x27;)                countt ++ ;  ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/27/PAT%E4%B9%99%E7%BA%A71020~1039/" title="PAT乙级题解(二) (1020 ~ 1039)"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_12.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PAT乙级题解(二) (1020 ~ 1039)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/PAT%E4%B9%99%E7%BA%A71020~1039/" title="PAT乙级题解(二) (1020 ~ 1039)">PAT乙级题解(二) (1020 ~ 1039)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.779Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-20T13:20:20.999Z" title="更新于 2022-01-20 21:20:20">2022-01-20</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/PAT%E4%B9%99%E7%BA%A7/">PAT乙级</a></span></div><div class="content">1020 月饼思路 (贪心)123456789101112131415161718192021222324252627282930313233343536373839404142434445464748#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;using namespace std;struct rec&#123;    double mount, price, unit;&#125;;bool cmp(rec &amp;a, rec &amp;b)&#123;    return a.unit &gt; b.unit;&#125;int main()&#123;    int n, m;    cin &gt;&gt; n &gt;&gt; m;        vector&lt;rec&gt;a(n);        for(int i = 0; i &lt; n ; i++) cin &gt;&gt; a[i].mount;    for(int i = 0; i &lt; ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/27/PAT%E4%B9%99%E7%BA%A71001~1019/" title="PAT乙级题解(一) (1001 ~ 1019)"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_9.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PAT乙级题解(一) (1001 ~ 1019)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/PAT%E4%B9%99%E7%BA%A71001~1019/" title="PAT乙级题解(一) (1001 ~ 1019)">PAT乙级题解(一) (1001 ~ 1019)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.776Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-22T08:15:42.851Z" title="更新于 2022-01-22 16:15:42">2022-01-22</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/PAT%E4%B9%99%E7%BA%A7/">PAT乙级</a></span></div><div class="content">1001 害死人不偿命的(3n+1)猜想思路 (枚举)
+如果是偶数则计算 $n &#x3D; n &#x2F; 2$
+如果是奇数则计算 $n &#x3D; 3 * n + 1$
+重复上述操作知道 $n &#x3D; 1$，用一个变量 $cnt$ 记录计算的次数
 
-  
+123456789101112131415161718192021222324#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;using namespace std;int main()&#123;    int n;    cin &gt;&gt; n;        int cnt = 0;    while(n != 1)    &#123;        if(n % 2 == 0)            n /= 2;        else n = (3 * n + 1) / 2;                cnt ++;    &#125;    cout &lt;&lt; cnt &lt;&lt; endl ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(9)/" title="AcWing算法基础(Ⅸ)"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_12.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AcWing算法基础(Ⅸ)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(9)/" title="AcWing算法基础(Ⅸ)">AcWing算法基础(Ⅸ)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.773Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-29T03:49:14.431Z" title="更新于 2022-01-29 11:49:14">2022-01-29</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">题目来源
+求组合数 I题目描述给定 nn 组询问，每组询问给定两个整数 a，ba，b，请你输出 Cbamod(109+7)Cabmod(109+7) 的值。
+输入格式第一行包含整数 nn。
+接下来 nn 行，每行包含一组 aa 和 bb。
+输出格式共 nn 行，每行输出一个询问的解。
+123456789101112131415161718192021222324252627282930313233#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;using namespace std;const int N = 2020, MOD = 1e9 + 7;int c[N][N];void init()&#123;    for(int i = 0 ; i &lt; N ; i ++ )        for(int j = 0 ; j &lt;= i ; j ++ )            if(!j) c[i][j] = 1;            else c[i][j] = (c[i  ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(8)/" title="AcWing算法基础(Ⅷ)"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_12.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AcWing算法基础(Ⅷ)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(8)/" title="AcWing算法基础(Ⅷ)">AcWing算法基础(Ⅷ)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.770Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-29T03:49:18.317Z" title="更新于 2022-01-29 11:49:18">2022-01-29</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">题目来源
+快速幂题目描述给定 n 组 ai,bi,pi，对于每组数据，求出 abiimodpi 的值。
+输入格式第一行包含整数 n。
+接下来 n 行，每行包含三个整数 ai,bi,pi。
+输出格式对于每组数据，输出一个结果，表示 abiimodpi 的值。
+每个结果占一行。
+123456789101112131415161718192021222324252627282930#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;using namespace std;long long qmi(int a, int b, int p)&#123;    long long res = 1 % p;    while(b)    &#123;        if(b &amp; 1) res = (long long)res * a % p;        a = (long long)a * a % p;        b &gt;&gt;= 1;    &#125;    return r ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(7)/" title="AcWing算法基础(Ⅶ)"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_10.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AcWing算法基础(Ⅶ)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(7)/" title="AcWing算法基础(Ⅶ)">AcWing算法基础(Ⅶ)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.765Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-29T03:49:22.972Z" title="更新于 2022-01-29 11:49:22">2022-01-29</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">题目来源
+试除法判定质数 (质数)题目描述给定 n 个正整数 ai，判定每个数是否是质数。
+输入格式第一行包含整数 n。
+接下来 n 行，每行包含一个正整数 ai。
+输出格式共 n 行，其中第 i 行输出第 i 个正整数 ai 是否为质数，是则输出 Yes，否则输出 No。
+123456789101112131415161718192021222324252627#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;using namespace std;bool isprime(int n)&#123;    if(n &lt; 2) return false;    for(int i = 2 ; i &lt;= n / i ; i ++ )        if(n % i == 0) return false;    return true;&#125;int main()&#123;    int n;    cin &gt;&gt; n;    while (n -- )    & ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(6)/" title="AcWing算法基础(Ⅵ)"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AcWing算法基础(Ⅵ)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/27/AcWing%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE(6)/" title="AcWing算法基础(Ⅵ)">AcWing算法基础(Ⅵ)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-27T13:00:48.762Z" title="发表于 2022-12-27 21:00:48">2022-12-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-29T03:48:28.221Z" title="更新于 2022-01-29 11:48:28">2022-01-29</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">题目来源
+Dijkstra求最短路 I题目描述给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环，所有边权均为正值。
+请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 −1。
+输入格式第一行包含整数 n 和 m。
+接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。
+输出格式输出一个整数，表示 1 号点到 n 号点的最短距离。
+如果路径不存在，则输出 −1。
+算法思路
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;using namespace std;const int N = 550; // n为550，显然为稠密图int n, m;int g[N][N]; // 因 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">范特西</div><div class="author-info__description">我的青春正在饶恕</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/fantasy404"><i class="fab fa-github"></i><span>来感受我的力量吧</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/fantasy404" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1589513855@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">我的青春正在燃烧</div></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">16</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">43.7k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-12-27T13:21:39.553Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By 范特西</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
 
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        window.typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = data.hitokoto
+      }
+    })
+}
 
-  
-    
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用多线部署，主线路托管于Vercel" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://dashboard.4everland.org/" style="margin-inline:5px" data-title="本站采用多线部署，备用线路托管于4EVERLAND" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&amp;logo=IPFS" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li></ul>
-    </div>
-  </div>
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/12/27/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body></html>
